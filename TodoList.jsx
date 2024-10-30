@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ScrollView, Text, View, TextInput, Button, TouchableOpacity, StyleSheet } from 'react-native';
 
+
 const ToDoList = () => {
     const [tasks, setTasks] = useState(["Do laundry", "Go to gym", "Walk dog,", "Buy groceries"]);
     const [newTask, setNewTask] = useState('');
