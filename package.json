@@ -1,18 +1,27 @@
 {
   "name": "todo-list",
+  "metro.config.js": "const { getDefaultConfig } = require('expo/metro-config');\n\nmodule.exports = getDefaultConfig(__dirname);",
   "version": "1.0.0",
-  "main": "expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.11",
     "expo": "~51.0.28",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
-    "react-native": "0.74.5"
+    "react-dom": "^18.2.0",
+    "react-native": "0.74.5",
+    "react-native-camera": "^4.2.1",
+    "react-native-gesture-handler": "^2.20.2",
+    "react-native-image-picker": "^7.1.2",
+    "react-native-reanimated": "^3.16.1",
+    "react-native-safe-area-context": "^4.13.1",
+    "react-native-screens": "^3.35.0",
+    "react-native-web": "^0.19.13"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
